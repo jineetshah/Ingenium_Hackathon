@@ -1,6 +1,5 @@
 "use-client";
 import React from "react";
-import Carousel from "@/components/carousel";
 import Card from "@/components/card_home";
 import i1 from "@/public/images/images_1.jpeg";
 import i2 from "@/public/mountain.jpg";
@@ -85,8 +84,8 @@ const HomePage: React.FC = () => {
     <div>
       {/* <Carousel /> */}
       <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24 ">
-        <div className="flex justify-center items-center">
-          <p className="text-center drop-shadow-lg text-black rounded-tr-xl font-bold font-mono text-6xl">
+        <div className="flex-col justify-center items-center">
+          <p className="text-center text-black rounded-tr-xl font-bold font-mono text-6xl pb-10">
             Latest News
           </p>
           <ProgressSlider items={items} />

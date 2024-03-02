@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import image1 from '@/public/backgroud_img.png';
 const UserProfile = () => {
     return (

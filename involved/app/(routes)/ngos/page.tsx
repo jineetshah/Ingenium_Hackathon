@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer"
 import NgoCard from "@/components/ui/card_n";
 
 const NGOPage = () => {

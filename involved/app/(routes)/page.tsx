@@ -9,6 +9,7 @@ import home3 from "@/public/images/home_3.png"
 import home4 from "@/public/images/home_4.png"
 
 import SilderImg03 from "@/public/mountain.jpg";
+import { SparklesCore } from "@/components/ui/sparkles";
 import { StaticImageData } from "next/legacy/image";
 import ProgressSlider from "@/components/progress_slider";
 import { HoverEffect } from "@/components/ui/card-hover-effect";

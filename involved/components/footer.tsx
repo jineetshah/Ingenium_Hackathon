@@ -1,7 +1,19 @@
+"use client"
+
 import logo from "@/public/images/Involved_primary.png";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
   return (
     <BackgroundGradientAnimation>
       <footer className="bg-[#e9e9e9] lg:grid lg:grid-cols-5 dark:bg-gray-900 ">

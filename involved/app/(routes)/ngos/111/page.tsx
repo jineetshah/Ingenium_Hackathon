@@ -19,7 +19,7 @@ import {
 import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
 import { IndianRupee } from "lucide-react";
-import Link from "next/link";
+import Link from "next/link"; 
 
 const NgoDetails = () => {
   return (

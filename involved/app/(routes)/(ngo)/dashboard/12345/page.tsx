@@ -20,8 +20,8 @@ const NgoDashboard = () => {
       <div className="space-y-4 p-8 pt-6">
         <Heading title="NGO X" description="Overview of your NGO" />
         <Separator />
-        <div className="flex justify-center space-x-56">
-          <Card className="p-6">
+        <div className="lg:flex justify-center lg:space-x-44">
+          <Card className="p-6 md:mt-2">
             <CardHeader>
               <CardTitle>Funds Recieved</CardTitle>
             </CardHeader>
@@ -31,7 +31,7 @@ const NgoDashboard = () => {
               </div>
             </CardContent>
           </Card>
-          <Card className="p-6">
+          <Card className="p-6 md:mt-2">
             <CardHeader>
               <CardTitle>No of volunteers</CardTitle>
             </CardHeader>
@@ -43,7 +43,7 @@ const NgoDashboard = () => {
           </Card>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4">
           <div className="m-2">
             <Card className="hover:cursor-pointer">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">

@@ -24,7 +24,7 @@ const NgoDashboard = () => {
             <Card className="hover:cursor-pointer">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="font-medium text-sm">
-                  New volunteers request
+                  New volunteers requests
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -71,7 +71,6 @@ const NgoDashboard = () => {
               </CardContent>
             </Card>
           </div>
-          
         </div>
       </div>
     </div>

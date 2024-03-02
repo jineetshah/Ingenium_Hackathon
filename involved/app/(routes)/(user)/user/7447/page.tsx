@@ -24,7 +24,7 @@ const UserProfile = () => {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-5xl font-bold">Jash Parikh</h2>
+                        <h2 className="text-5xl border-b-2 border-blue-300 font-bold">Jash Parikh</h2>
                         <p className="text-2xl">jash@gmail.com</p>
                     </div>
                 </div>
@@ -34,19 +34,19 @@ const UserProfile = () => {
                 <div className="flex border-b">
                     <button 
                         onClick={() => setActiveTab('placesWorked')} 
-                        className={`w-1/3 py-2 border-b-2 text-center p-5 ${activeTab === 'placesWorked' ? 'border-blue-500' : 'border-gray-300'}`}
+                        className={`w-1/3 py-2 border-b-2 text-center p-5  ${activeTab === 'placesWorked' ? 'font-bold' : 'border-gray-300'}`}
                     >
                         Places Worked
                     </button>
                     <button 
                         onClick={() => setActiveTab('myCertificates')} 
-                        className={`w-1/3 py-2 border-b-2 text-center p-5 ${activeTab === 'myCertificates' ? 'border-blue-500' : 'border-gray-300'}`}
+                        className={`w-1/3 py-2 border-b-2 text-center p-5 ${activeTab === 'myCertificates' ? 'font-bold' : 'border-gray-300'}`}
                     >
                         My Certificates
                     </button>
                     <button 
                         onClick={() => setActiveTab('couponsCollected')} 
-                        className={`w-1/3 py-2 border-b-2 text-center p-5 ${activeTab === 'couponsCollected' ? 'border-blue-500' : 'border-gray-300'}`}
+                        className={`w-1/3 py-2 border-b-2 text-center p-5 ${activeTab === 'couponsCollected' ? 'font-bold' : 'border-gray-300'}`}
                     >
                         Coupons Collected
                     </button>

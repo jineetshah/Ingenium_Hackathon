@@ -13,6 +13,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 import { StaticImageData } from "next/legacy/image";
 import ProgressSlider from "@/components/progress_slider";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { SparklesCore } from "@/components/ui/sparkles";
 interface CardProps {
   image: StaticImageData;
   title: string;
@@ -99,37 +100,37 @@ const HomePage: React.FC = () => {
   ];
   const projects = [
     {
-      title: "Stripe",
+      title: "6000+ Volunteers",
       description:
         "A technology company that builds economic infrastructure for the internet.",
       link: "https://stripe.com",
     },
     {
-      title: "Netflix",
+      title: "170+ NGOs",
       description:
         "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
       link: "https://netflix.com",
     },
     {
-      title: "Google",
+      title: "2 lakhs + fund raised",
       description:
         "A multinational technology company that specializes in Internet-related services and products.",
       link: "https://google.com",
     },
     {
-      title: "Meta",
+      title: "More than 100 corporates",
       description:
         "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
       link: "https://meta.com",
     },
     {
-      title: "Amazon",
+      title: "1400+ Animals and birds helped",
       description:
         "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
       link: "https://amazon.com",
     },
     {
-      title: "Microsoft",
+      title: "20000+ People received help",
       description:
         "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
       link: "https://microsoft.com",
@@ -152,8 +153,14 @@ const HomePage: React.FC = () => {
                 particleColor="#FFFFFF"
               />
             </div>
-            <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
-              Be a part of the change
+            <h1 className="md:text-7xl text-3xl lg:text-5xl font-bold text-center text-white relative z-20 pb-10">
+            Discover Purpose, Get INVOLVED:
+            </h1>
+            <h1 className="md:text-7xl text-3xl lg:text-5xl font-bold text-center text-white relative z-20 pb-10">
+            Connecting NGOs with Volunteers 
+            </h1>
+            <h1 className="md:text-7xl text-3xl lg:text-4xl font-bold text-center text-white relative z-20">
+            And much more ...
             </h1>
           </div>
           <div className="max-w-5xl mx-auto px-8">

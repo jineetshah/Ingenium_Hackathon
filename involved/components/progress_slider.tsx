@@ -52,9 +52,6 @@ export default function ProgressSlider({ items }: { items: Item[] }) {
     <div className="w-full max-w-5xl mx-auto text-center">
       {/* Item image */}
       <div className="transition-all duration-150 delay-300 ease-in-out">
-        {/* <p className="absolute top-0 left-0 drop-shadow-lg text-black p-2 text-left rounded-tr-xl font-bold font-mono text-6xl flex-col">
-          Latest News
-        </p> */}
         <div className="relative" ref={itemsRef}>
           {items.map((item, index) => (
             <Transition
@@ -78,12 +75,12 @@ export default function ProgressSlider({ items }: { items: Item[] }) {
                 />
                 <p className="absolute top-0 left-0 drop-shadow-lg text-white p-2 text-left rounded-tr-xl font-bold font-mono text-6xl flex-col">
                   {item.desc}
-                  <div className="p-2 text-sm font-normal text-left w-4/5 text-wrap drop-shadow-2xl">
+                  {/* <div className="p-2 text-sm font-normal text-left w-4/5 text-wrap drop-shadow-2xl">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Dicta pariatur culpa minima! Quod at vel minima laudantium
                     pariatur laborum, similique aliquam aliquid culpa,
                     exercitationem minus consequatur. Ullam delectus magni quam?
-                  </div>
+                  </div> */}
                 </p>
               </div>
             </Transition>

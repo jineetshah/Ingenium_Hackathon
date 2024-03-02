@@ -1,9 +1,12 @@
 "use-client";
 import React from "react";
-import Carousel from "@/components/carousel";
 import Card from "@/components/card_home";
 import i1 from "@/public/images/images_1.jpeg";
 import i2 from "@/public/mountain.jpg";
+import home1 from "@/public/images/home_1.png"
+import home2 from "@/public/images/home_2.png"
+import home3 from "@/public/images/home_3.png"
+import home4 from "@/public/images/home_4.png"
 
 import SilderImg03 from "@/public/mountain.jpg";
 import { StaticImageData } from "next/legacy/image";
@@ -61,32 +64,32 @@ const HomePage: React.FC = () => {
   ];
   const items = [
     {
-      img: i2,
-      desc: "Omnichannel",
-      buttonIcon: SilderImg03,
+      img: home1,
+      // desc: "Omnichannel",
+      buttonIcon: home1,
     },
     {
-      img: i2,
-      desc: "Multilingual",
-      buttonIcon: SilderImg03,
+      img: home2,
+      // desc: "Multilingual",
+      buttonIcon: home2,
     },
     {
-      img: i1,
-      desc: "Interpolate",
-      buttonIcon: SilderImg03,
+      img: home3,
+      // desc: "Interpolate",
+      buttonIcon: home3,
     },
     {
-      img: i2,
-      desc: "Enriched",
-      buttonIcon: SilderImg03,
+      img: home4,
+      // desc: "Enriched",
+      buttonIcon: home4,
     },
   ];
   return (
     <div>
       {/* <Carousel /> */}
       <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24 ">
-        <div className="flex justify-center items-center">
-          <p className="text-center drop-shadow-lg text-black rounded-tr-xl font-bold font-mono text-6xl">
+        <div className="flex-col justify-center items-center">
+          <p className="text-center text-black rounded-tr-xl font-bold font-mono text-6xl pb-10">
             Latest News
           </p>
           <ProgressSlider items={items} />

@@ -1,29 +1,69 @@
-  // pages/index.tsx
-  import React from 'react';
-  import Image from 'next/image';
 
-  import image1 from "@/public/images/images_1.jpeg"
+import React from 'react';
+import Carousel from '@/components/carousel'; 
+import Card from '@/components/card_home';
+import i1 from '@/public/images/images_1.jpeg';
+interface CardProps {
+  image: StaticImageData;
+  title: string;
+  description: string;
+}
 
-  const HomePage: React.FC = () => {
-  const images = [
-      image1
-  ];
-
-  // Extract the first image URL
-  const firstImage = images[0];
-
+const CardContainer: React.FC<{ cardsData: CardProps[] }> = ({ cardsData }) => {
   return (
-    <div>
-    <h1>Welcome to My Website</h1>
-    <Image 
-      src={firstImage }
-      style={{ width: '100%', height: '70vh', objectFit: 'cover'}}
-      alt="image"
-  />
-
-  </div>
-
+    <div className="card-container">
+      {cardsData.map((cardData, index) => (
+        <Card key={index} {...cardData} />
+      ))}
+    </div>
   );
-  };
+};
 
-  export default HomePage;
+const HomePage: React.FC = () => {
+
+  const cardData = [
+    {
+      image: i1,
+      title: "Example Card 1",
+      description: "This is an example card with some description.",
+    },
+    {
+      image: i1,
+      title: "Example Card 1",
+      description: "This is an example card with some description.",
+    },
+    {
+      image: i1,
+      title: "Example Card 1",
+      description: "This is an example card with some description.",
+    },
+    {
+      image: i1,
+      title: "Example Card 1",
+      description: "This is an example card with some description.",
+    },
+    {
+      image: i1,
+      title: "Example Card 1",
+      description: "This is an example card with some description.",
+    },
+    {
+      image: i1,
+      title: "Example Card 1",
+      description: "This is an example card with some description.",
+    },
+    
+    // Add more card data as needed
+  ];
+ return (
+    <div>
+      <Carousel />
+      <div className="container-wrapper">
+      <CardContainer cardsData={cardData} />
+      </div>
+      
+    </div>
+ );
+};
+
+export default HomePage;

@@ -12,7 +12,7 @@ const Navbar = () => {
       id: 1,
       link: "/", // Changed to navigate to the root
       text: "home", // Text to display
-    },
+    }, 
     {
       id: 2,
       link: "ngos",

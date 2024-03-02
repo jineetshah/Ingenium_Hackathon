@@ -74,3 +74,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* styles.css (or your preferred styling solution) */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 16px;
+}
+
+.container-wrapper {
+  padding: 0 200px; /* Adjust the padding value as needed */
+}

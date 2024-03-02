@@ -52,9 +52,9 @@ export default function ProgressSlider({ items }: { items: Item[] }) {
     <div className="w-full max-w-5xl mx-auto text-center">
       {/* Item image */}
       <div className="transition-all duration-150 delay-300 ease-in-out">
-        <p className="absolute top-0 left-0 drop-shadow-lg text-black p-2 text-left rounded-tr-xl font-bold font-mono text-6xl flex-col">
+        {/* <p className="absolute top-0 left-0 drop-shadow-lg text-black p-2 text-left rounded-tr-xl font-bold font-mono text-6xl flex-col">
           Latest News
-        </p>
+        </p> */}
         <div className="relative" ref={itemsRef}>
           {items.map((item, index) => (
             <Transition

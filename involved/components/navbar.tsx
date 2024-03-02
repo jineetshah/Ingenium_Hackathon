@@ -15,22 +15,22 @@ const Navbar = () => {
     }, 
     {
       id: 2,
-      link: "ngos",
+      link: "/ngos",
       text: "NGOs", 
     },
     {
       id: 3,
-      link: "demo1",
+      link: "/demo1",
       text: "demo1", 
     },
     {
       id: 4,
-      link: "demo2",
+      link: "/demo2",
       text: "demo2", 
     },
     {
       id: 5,
-      link: "contact",
+      link: "/contact",
       text: "contact", 
     },
   ];
@@ -41,11 +41,11 @@ const Navbar = () => {
         <h1 className="text-5xl font-signature ml-2">
           <a
             className="link-underline link-underline-black"
-            href=""
+            href='/'
             target="_blank"
             rel="noreferrer"
           >
-            Logo
+            INVOLVED
           </a>
         </h1>
       </div>

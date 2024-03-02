@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import image1 from '@/public/backgroud_img.png';
 import UserCards from '@/components/ui/usercard';
 

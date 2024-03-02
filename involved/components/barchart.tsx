@@ -62,9 +62,8 @@ const data = [
 
 export default function BarCharts() {
   return (
-    <div className="">
       <BarChart
-        width={600} // Specify an initial width if needed
+        width={500} // Specify an initial width if needed
         height={300}
         data={data}
         className=""
@@ -75,6 +74,5 @@ export default function BarCharts() {
         <Tooltip />
         <Bar dataKey="amt" fill="#2F4241" />
       </BarChart>
-    </div>
   );
 }

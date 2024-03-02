@@ -11,14 +11,6 @@ import {
 
 const data = [
   {
-    name: "Jan",
-    amt: 10050,
-  },
-  {
-    name: "Feb",
-    amt: 7500,
-  },
-  {
     name: "Mar",
     amt: 12006,
   },
@@ -57,6 +49,14 @@ const data = [
   {
     name: "Dec",
     amt: 16000,
+  },
+  {
+    name: "Jan",
+    amt: 10050,
+  },
+  {
+    name: "Feb",
+    amt: 7500,
   },
 ];
 

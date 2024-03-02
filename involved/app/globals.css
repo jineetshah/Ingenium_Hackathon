@@ -103,3 +103,54 @@
 .container-wrapper {
   padding: 0 200px; /* Adjust the padding value as needed */
 }
+
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+ }
+ 
+ .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ 
+ .post-media {
+  margin-top: 10px;
+  text-align: center; /* Center the media */
+ }
+ 
+ .post-media img {
+  max-width: 100%; /* Ensure the image fits within the post */
+  height: auto; /* Maintain aspect ratio */
+ }
+ 
+ .post-content {
+  margin-top: 10px;
+ }
+ 
+ .post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+ }
+ 
+ .post-actions button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ 
+ 
+ .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes the App component take up the full viewport height */
+  padding: 20px; /* Add some padding around the post */
+ }

@@ -1,9 +1,16 @@
-"use-client";
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Card from "@/components/card_home";
 import i1 from "@/public/images/images_1.jpeg";
 import i2 from "@/public/mountain.jpg";
+<<<<<<< HEAD
 import { SparklesCore } from "@/components/ui/sparkles";
+=======
+import home1 from "@/public/images/home_1.png"
+import home2 from "@/public/images/home_2.png"
+import home3 from "@/public/images/home_3.png"
+import home4 from "@/public/images/home_4.png"
+>>>>>>> 37df22058885f07ed03b435685d96e1966b34e87
 
 import SilderImg03 from "@/public/mountain.jpg";
 import { StaticImageData } from "next/legacy/image";
@@ -16,6 +23,8 @@ interface CardProps {
 }
 
 const CardContainer: React.FC<{ cardsData: CardProps[] }> = ({ cardsData }) => {
+  
+
   return (
     <div className="card-container no-scrollbar bg-blend-darken ">
       {cardsData.map((cardData, index) => (
@@ -26,6 +35,15 @@ const CardContainer: React.FC<{ cardsData: CardProps[] }> = ({ cardsData }) => {
 };
 
 const HomePage: React.FC = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
   const cardData = [
     {
       image: i1,
@@ -62,24 +80,24 @@ const HomePage: React.FC = () => {
   ];
   const items = [
     {
-      img: i2,
-      desc: "Omnichannel",
-      buttonIcon: SilderImg03,
+      img: home1,
+      // desc: "Omnichannel",
+      buttonIcon: home1,
     },
     {
-      img: i2,
-      desc: "Multilingual",
-      buttonIcon: SilderImg03,
+      img: home2,
+      // desc: "Multilingual",
+      buttonIcon: home2,
     },
     {
-      img: i1,
-      desc: "Interpolate",
-      buttonIcon: SilderImg03,
+      img: home3,
+      // desc: "Interpolate",
+      buttonIcon: home3,
     },
     {
-      img: i2,
-      desc: "Enriched",
-      buttonIcon: SilderImg03,
+      img: home4,
+      // desc: "Enriched",
+      buttonIcon: home4,
     },
   ];
   const projects = [

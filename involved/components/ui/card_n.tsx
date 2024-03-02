@@ -1,27 +1,22 @@
 const NgoCard = ({ ngo }) => {
     return (
-       <div className="NgoCard">
-           <div className="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl">
-             <div className="p-5 pb-0">
-               <img className="h-40 w-40 mx-auto" src={ngo.imageUrl} alt={ngo.name} />
-               <div className="text-lg font-semibold text-center w-full mt-2">
-                 {ngo.name}
-               </div>
-               <div className="flex items-center text-gray-700 justify-center gap-2 my-2">
-                 <i className="ri-star-fill"></i>
-                 <i className="ri-star-fill"></i>
-                 <i className="ri-star-fill"></i>
-                 <i className="ri-star-fill"></i>
-                 <i className="ri-star-fill"></i>
-               </div>
-             </div>
-             <div className="bg-black text-center py-3 text-white font-bold cursor-pointer">
-               Know More
-             </div>
-           </div>
+       <div className="NgoCard rounded-lg overflow-hidden">
+            <div className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group" style={{backgroundImage: `url(${ngo.imageUrl})`}}>
+                <div className="bg-black bg-opacity-20 min-h-96 px-10 flex flex-wrap flex-col pt-64 hover:bg-opacity-75 transform duration-300 rounded-lg">
+                    <h1 className="text-white text-3xl mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300 font-bold">
+                        {ngo.name}
+                    </h1>
+                    <div className="w-16 h-2 bg-yellow-500 rounded-full mb-5 transform translate-y-20 group-hover:translate-y-0 duration-300"></div>
+                    <p className="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!
+                        <button className="m-5 bg-gradient-to-r from-purple-600 to-black text-white font-bold py-3 px-8 min-w-[200px] rounded-lg shadow-md transition duration-300 hover:shadow-lg hover:from-black hover:to-purple-600">
+                            Know More
+                        </button>
+                    </p>
+                </div>
+            </div>
        </div>
     );
-   };
-   
-   export default NgoCard;
-   
+};
+
+export default NgoCard;

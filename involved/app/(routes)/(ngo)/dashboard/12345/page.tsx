@@ -14,9 +14,7 @@ import { IndianRupee } from "lucide-react";
 
 const NgoDashboard = () => {
   return (
-    <div>
-      <div className="mb-6">Navbar</div>
-
+    <div className="">
       <div className="space-y-4 p-8 pt-6">
         <Heading title="NGO X" description="Overview of your NGO" />
         <Separator />
@@ -73,6 +71,7 @@ const NgoDashboard = () => {
               </CardContent>
             </Card>
           </div>
+          
         </div>
       </div>
     </div>

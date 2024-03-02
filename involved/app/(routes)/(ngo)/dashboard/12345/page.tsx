@@ -14,17 +14,35 @@ import {
 import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
 import { IndianRupee } from "lucide-react";
+import { VolModal } from "@/components/modals/volmodal";
+import { ColabModal } from "@/components/modals/colabmodal";
+
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const NgoDashboard = () => {
+  const [loading, setLoading] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [open1, setOpen1] = useState(false);
 
   const handleNewVol = () => {
     console.log("Hiiii");
-    
   };
 
   return (
     <div className="">
+      <VolModal
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        onConfirm={handleNewVol}
+        loading={loading}
+      />
+      <ColabModal
+        isOpen={open1}
+        onClose={() => setOpen1(false)}
+        onConfirm={handleNewVol}
+        loading={loading}
+      />
       <div className="space-y-4 p-8 pt-6">
         <Heading title="NGO X" description="Overview of your NGO" />
         <Separator />
@@ -62,7 +80,14 @@ const NgoDashboard = () => {
               <CardContent>
                 <div className="flex justify-between">
                   <div className="text-2xl font-bold">3</div>
-                  <Button onClick={handleNewVol}> Approve </Button>
+                  <Button
+                    onClick={() => {
+                      setOpen(true);
+                    }}
+                  >
+                    {" "}
+                    Approve{" "}
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -75,9 +100,16 @@ const NgoDashboard = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-              <div className="flex justify-between">
+                <div className="flex justify-between">
                   <div className="text-2xl font-bold">1</div>
-                  <Button onClick={handleNewVol}> Approve </Button>
+                  <Button
+                    onClick={() => {
+                      setOpen1(true);
+                    }}
+                  >
+                    {" "}
+                    Approve{" "}
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -90,7 +122,7 @@ const NgoDashboard = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-              <div className="flex justify-between">
+                <div className="flex justify-between">
                   <div className="text-2xl font-bold">406</div>
                 </div>
               </CardContent>

@@ -1,8 +1,10 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import img from "@/public/images/Involved_primary.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -21,40 +23,40 @@ const Navbar = () => {
       id: 1,
       link: "/", // Changed to navigate to the root
       text: "home", // Text to display
-    }, 
+    },
     {
       id: 2,
       link: "/ngos",
-      text: "NGOs", 
+      text: "NGOs",
     },
     {
       id: 3,
       link: "/demo1",
-      text: "demo1", 
+      text: "demo1",
     },
     {
       id: 4,
       link: "/demo2",
-      text: "demo2", 
+      text: "demo2",
     },
     {
       id: 5,
       link: "/contact",
-      text: "contact", 
+      text: "contact",
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black relative nav">
+    <div className="flex justify-between items-center w-full h-20 px-4  bg-[#252525] relative nav">
       <div>
         <h1 className="text-5xl font-signature ml-2">
           <a
             className="link-underline link-underline-black"
-            href='/'
+            href="/"
             target="_blank"
             rel="noreferrer"
           >
-            INVOLVED
+            <Image src={img} alt="Involved" width={200} height={100}></Image>
           </a>
         </h1>
       </div>
@@ -70,7 +72,10 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
+      <div
+        onClick={() => setNav(!nav)}
+        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+      >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 

@@ -67,7 +67,7 @@ export default function ProgressSlider({ items }: { items: Item[] }) {
             >
               <div className="relative rounded-xl h-96 object-cover">
                 <Image
-                  className="rounded-xl h-96 object-cover opacity-70 bg-black"
+                  className="rounded-xl h-96 object-cover"
                   src={item.img}
                   width={1024}
                   height={576}

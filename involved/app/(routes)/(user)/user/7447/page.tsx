@@ -1,116 +1,82 @@
 'use client'
-
-import React from 'react';
-import Image from "next/legacy/image";
+import { useState } from 'react';
+import Image from 'next/image';
 import image1 from '@/public/backgroud_img.png';
 import UserCards from '@/components/ui/usercard';
 
 const UserProfile = () => {
- const [openTab, setOpenTab] = React.useState(1);
+    const [activeTab, setActiveTab] = useState('placesWorked');
 
- return (
-    <div>
-      <div className="relative h-64 w-full bg-cover bg-center" style={{backgroundImage: "url('https://picsum.photos/200/300')"}}>
-        <div className="flex items-center">
-          <div className="mr-4">
-            <div className="p-4 ml-16">
-              <Image
-                src="https://picsum.photos/id/237/200/300"
-                alt="Descriptive alt text"
-                width={140}
-                height={140}
-                objectFit="cover"
-                className="rounded-full"
-              />
+    return (
+        <div className='bg-gray-50'>
+            <div className="relative h-64 w-full bg-cover bg-center" style={{backgroundImage: "url('https://as2.ftcdn.net/v2/jpg/03/85/88/41/1000_F_385884179_8mA6rX2pc4dmhoNF7zgPqI4ctcVk2um0.jpg')"}}>
+                <div className="flex items-center">
+                    <div className="mr-4">
+                        <div className="p-4 ml-16">
+                            <Image
+                                src="https://picsum.photos/id/237/200/300"
+                                alt="Descriptive alt text"
+                                width={140}
+                                height={140}
+                                objectFit="cover"
+                                className="rounded-full"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <h2 className="text-5xl border-b-2 border-blue-300 font-bold">Jash Parikh</h2>
+                        <p className="text-2xl">jash@gmail.com</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div>
-            <h2 className="text-5xl font-bold">Jash Parikh</h2>
-            <p className="text-2xl">jash@gmail.com</p>
-          </div>
-        </div>
-      </div>
-      {/* Tab view starts here */}
-      <div className="flex flex-wrap">
-        <div className="w-full">
-          <ul className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row" role="tablist">
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                 (openTab === 1 ? "text-white bg-blue-600" : "text-blue-600 bg-white")
-                }
-                onClick={(e) => {
-                 e.preventDefault();
-                 setOpenTab(1);
-                }}
-                data-toggle="tab"
-                href="#link1"
-                role="tablist"
-              >
-                Places Worked
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                 (openTab === 2 ? "text-white bg-blue-600" : "text-blue-600 bg-white")
-                }
-                onClick={(e) => {
-                 e.preventDefault();
-                 setOpenTab(2);
-                }}
-                data-toggle="tab"
-                href="#link2"
-                role="tablist"
-              >
-                My Certificates
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                 (openTab === 3 ? "text-white bg-blue-600" : "text-blue-600 bg-white")
-                }
-                onClick={(e) => {
-                 e.preventDefault();
-                 setOpenTab(3);
-                }}
-                data-toggle="tab"
-                href="#link3"
-                role="tablist"
-              >
-                Coupons Collected
-              </a>
-            </li>
-          </ul>
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-            <div className="px-4 py-5 flex-auto">
-              <div className="tab-content tab-space">
-                <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                 <UserCards imageSrc="https://picsum.photos/id/237/200/300" userName="NGO1" hoursWorked={100} />
-                 <UserCards imageSrc="https://picsum.photos/id/237/200/300" userName="NGO2" hoursWorked={50} />
-                 {/* Add more UserCards as needed */}
+            {/* Tab view starts here */}
+            <div className="p-4">
+                <div className="flex border-b">
+                    <button 
+                        onClick={() => setActiveTab('placesWorked')} 
+                        className={`w-1/3 py-2 border-b-2 text-center p-5  ${activeTab === 'placesWorked' ? 'font-bold' : 'border-gray-300'}`}
+                    >
+                        Places Worked
+                    </button>
+                    <button 
+                        onClick={() => setActiveTab('myCertificates')} 
+                        className={`w-1/3 py-2 border-b-2 text-center p-5 ${activeTab === 'myCertificates' ? 'font-bold' : 'border-gray-300'}`}
+                    >
+                        My Certificates
+                    </button>
+                    <button 
+                        onClick={() => setActiveTab('couponsCollected')} 
+                        className={`w-1/3 py-2 border-b-2 text-center p-5 ${activeTab === 'couponsCollected' ? 'font-bold' : 'border-gray-300'}`}
+                    >
+                        Coupons Collected
+                    </button>
                 </div>
-                <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                 {/* Content for "My Certificates" tab */}
-                 <p>Certificate 1</p>
-                 <p>Certificate 2</p>
+                <div className="mt-4">
+                    {activeTab === 'placesWorked' && (
+                        <div>
+                            <UserCards imageSrc="https://picsum.photos/id/237/200/300" userName="NGO1" hoursWorked={100} />
+                            <UserCards imageSrc="https://picsum.photos/id/237/200/300" userName="NGO2" hoursWorked={50} />
+                            {/* Add more UserCards as needed */}
+                        </div>
+                    )}
+                    {activeTab === 'myCertificates' && (
+                        <div>
+                            {/* Content for "My Certificates" tab */}
+                            <p>Certificate 1</p>
+                            <p>Certificate 2</p>
+                        </div>
+                    )}
+                    {activeTab === 'couponsCollected' && (
+                        <div>
+                            {/* Content for "Coupons Collected" tab */}
+                            <p>Coupon 1</p>
+                            <p>Coupon 2</p>
+                        </div>
+                    )}
                 </div>
-                <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                 {/* Content for "Coupons Collected" tab */}
-                 <p>Coupon 1</p>
-                 <p>Coupon 2</p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
- );
+    );
 };
 
 export default UserProfile;

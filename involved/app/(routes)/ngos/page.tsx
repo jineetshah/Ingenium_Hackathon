@@ -19,8 +19,7 @@ const NGOPage = () => {
  ];
 
  return (
-    <div className="card-container">
-      <Navbar />
+    <div>
       <div className="grid grid-cols-3 gap-8 mt-10">
         {ngos.map((ngo, index) => (
             <NgoCard key={index} ngo={ngo} />

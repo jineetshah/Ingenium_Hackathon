@@ -15,7 +15,7 @@ const NgoCard = ({ ngo }) => {
                  <i className="ri-star-fill"></i>
                </div>
              </div>
-             <div className="bg-pink-500 text-center py-3 text-white cursor-pointer">
+             <div className="bg-black text-center py-3 text-white font-bold cursor-pointer">
                Know More
              </div>
            </div>

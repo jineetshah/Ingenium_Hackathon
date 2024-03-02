@@ -1,5 +1,5 @@
-"use-client";
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Card from "@/components/card_home";
 import i1 from "@/public/images/images_1.jpeg";
 import i2 from "@/public/mountain.jpg";
@@ -14,6 +14,8 @@ interface CardProps {
 }
 
 const CardContainer: React.FC<{ cardsData: CardProps[] }> = ({ cardsData }) => {
+  
+
   return (
     <div className="card-container no-scrollbar bg-blend-darken ">
       {cardsData.map((cardData, index) => (
@@ -24,6 +26,15 @@ const CardContainer: React.FC<{ cardsData: CardProps[] }> = ({ cardsData }) => {
 };
 
 const HomePage: React.FC = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
   const cardData = [
     {
       image: i1,

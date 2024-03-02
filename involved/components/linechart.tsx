@@ -62,14 +62,12 @@ const data = [
 
 export default function LineCharts() {
   return (
-    <div className="">
-      <LineChart width={600} height={300} data={data} className="">
+      <LineChart width={500} height={300} data={data} className="">
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
         <Line type="monotone" dataKey="amt" stroke="#2F4241" strokeWidth={3} />
       </LineChart>
-    </div>
   );
 }

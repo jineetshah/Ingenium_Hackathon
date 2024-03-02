@@ -1,5 +1,7 @@
 "use client";
 
+import BarCharts from "@/components/barchart";
+import LineCharts from "@/components/linechart";
 import {
   Card,
   CardContent,
@@ -12,14 +14,35 @@ import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
 import { IndianRupee } from "lucide-react";
 
-
 const NgoDashboard = () => {
   return (
     <div className="">
       <div className="space-y-4 p-8 pt-6">
         <Heading title="NGO X" description="Overview of your NGO" />
         <Separator />
-        <div>Graphical analytics</div>
+        <div className="flex justify-center space-x-56">
+          <Card className="p-6">
+            <CardHeader>
+              <CardTitle>Funds Recieved</CardTitle>
+            </CardHeader>
+            <CardContent className="pl-2">
+              <div>
+                <BarCharts />
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="p-6">
+            <CardHeader>
+              <CardTitle>No of volunteers</CardTitle>
+            </CardHeader>
+            <CardContent className="pl-2">
+              <div>
+                <LineCharts />
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         <div className="grid grid-cols-2 gap-4">
           <div className="m-2">
             <Card className="hover:cursor-pointer">

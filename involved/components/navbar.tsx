@@ -15,22 +15,22 @@ const Navbar = () => {
     }, 
     {
       id: 2,
-      link: "ngos",
+      link: "/ngos",
       text: "NGOs", 
     },
     {
       id: 3,
-      link: "demo1",
+      link: "/demo1",
       text: "demo1", 
     },
     {
       id: 4,
-      link: "demo2",
+      link: "/demo2",
       text: "demo2", 
     },
     {
       id: 5,
-      link: "contact",
+      link: "/contact",
       text: "contact", 
     },
   ];

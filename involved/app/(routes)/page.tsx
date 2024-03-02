@@ -12,8 +12,7 @@ import SilderImg03 from "@/public/mountain.jpg";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { StaticImageData } from "next/legacy/image";
 import ProgressSlider from "@/components/progress_slider";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { SparklesCore } from "@/components/ui/sparkles";
+import { HoverEffect } from "@/components/ui/card-hover-effect"; 
 interface CardProps {
   image: StaticImageData;
   title: string;
@@ -167,7 +166,7 @@ const HomePage: React.FC = () => {
             <HoverEffect items={projects} />
           </div>
           <p className="text-center text-black rounded-tr-xl font-bold font-mono text-6xl pb-10">
-            Latest News
+            Featured
           </p>
           <ProgressSlider items={items} />
         </div>

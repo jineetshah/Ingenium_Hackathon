@@ -15,7 +15,7 @@ const Footer = () => {
     return null;
   }
   return (
-    <BackgroundGradientAnimation>
+    <BackgroundGradientAnimation className="">
       <footer className="bg-[#e9e9e9] lg:grid lg:grid-cols-5 dark:bg-gray-900 ">
         <div className="relative block h-32 lg:col-span-2 lg:h-full mt-16">
           <img

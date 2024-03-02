@@ -20,8 +20,18 @@ import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
 import { IndianRupee } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const NgoDetails = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
   return (
     <div className="">
       <div

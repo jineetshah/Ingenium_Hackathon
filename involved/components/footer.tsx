@@ -16,7 +16,7 @@ const Footer = () => {
   }
   return (
     <BackgroundGradientAnimation className="">
-      <footer className="bg-[#e9e9e9] lg:grid lg:grid-cols-5 dark:bg-gray-900 ">
+      <footer className="bg-[#e9e9e9] lg:grid lg:grid-cols-1 dark:bg-gray-900 p-10 py-0">
         <div className="relative block h-32 lg:col-span-2 lg:h-full mt-16">
           <img
             src="/Involved-removebg-dark.png"
@@ -26,25 +26,15 @@ const Footer = () => {
           {/* <div>Hello</div> */}
         </div>
 
-        <div className="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div className="px-4 py-12 sm:px-6 lg:col-span-3 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div>
-              <p>
-                <span className="text-xs uppercase tracking-wide text-[#525252] dark:text-[#525252]">
-                  Call us
-                </span>
+              <div className="my-24"> </div>
 
-                <a
-                  href="#"
-                  className="block text-2xl font-medium text-[#525252] hover:opacity-75 sm:text-3xl dark:text-[#525252]"
-                >
-                  9876543210
-                </a>
-              </p>
-
-              <ul className="mt-8 space-y-1 text-sm text-[#525252] dark:text-[#525252]">
-                <li>Monday to Friday: 10am - 5pm</li>
-                <li>Weekend: 10am - 3pm</li>
+              <ul className="mt-8 space-y-1 text-sm text-[#525252] dark:text-[#525252] w-8/12">
+                <li>Involved connects NGOs and volunteers, simplifying collaborations for impactful change. Join us in making a difference, together.</li>
+                <br></br>
+                <li>involved.org@gmail.com</li>
               </ul>
 
               <ul className="mt-8 flex gap-6">
@@ -166,7 +156,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 ml-16">
               <div>
                 <p className="font-medium text-[#525252] dark:text-[#525252]">
                   Services
@@ -175,10 +165,37 @@ const Footer = () => {
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <a
-                      href="#"
+                      href="/post"
                       className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
                     >
-                      1on1 Coaching
+                      Community
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/ngos"
+                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
+                    >
+                      NGOs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/user/7447"
+                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
+                    >
+                      User Account
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="/ngos/111"
+                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
+                    >
+                      NGO stats
                     </a>
                   </li>
 
@@ -187,34 +204,7 @@ const Footer = () => {
                       href="#"
                       className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
                     >
-                      Company Review
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
-                    >
-                      Accounts Review
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
-                    >
-                      HR Consulting
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
-                    >
-                      SEO Optimisation
+                      About Us
                     </a>
                   </li>
                 </ul>
@@ -222,42 +212,60 @@ const Footer = () => {
 
               <div>
                 <p className="font-medium text-[#525252] dark:text-[#525252]">
-                  Company
+                  Contributors
                 </p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
                     <a
-                      href="#"
+                      href="https://github.com/Jash7447"
                       className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
                     >
-                      About
+                      Jash Parikh
                     </a>
                   </li>
 
                   <li>
                     <a
-                      href="#"
+                      href="https://github.com/Legit-Ox"
                       className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
                     >
-                      Meet the Team
+                      Saahil Doshi
                     </a>
                   </li>
 
                   <li>
                     <a
-                      href="#"
+                      href="https://github.com/Deval1807"
                       className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
                     >
-                      Accounts Review
+                      Deval Darji
                     </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://github.com/jineetshah"
+                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
+                    >
+                      Jineet Shah
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/nisarg-110"
+                      className="text-[#525252] transition hover:opacity-75 dark:text-[#525252]"
+                    >
+                      Nisarg Patel
+                    </a>
+                    
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-12 dark:border-gray-800">
+          <div className="border-t border-gray-100 pt-12 dark:border-gray-800">
             <div className="sm:flex sm:items-center sm:justify-between">
               <ul className="flex flex-wrap gap-4 text-xs">
                 <li>

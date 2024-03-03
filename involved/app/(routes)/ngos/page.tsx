@@ -1,5 +1,9 @@
+"use client"
+
 import NgoCard from "@/components/ui/card_n";
+import { Separator } from "@/components/ui/separator";
 import bgImage from "@/public/images/ngo_card_bg1.png"
+import { useEffect, useState } from "react";
 
 const NGOPage = () => {
  const ngos = [
@@ -14,9 +18,20 @@ const NGOPage = () => {
     { name: "NGO 9", imageUrl: "/images/ngo_card_bg9.png" },
  ];
 
+ const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
  return (
-    <div>
-      <h1 className="text-5xl font-extrabold text-center text-gray-900 dark:text-white mb-8">NGO List</h1>
+    <div className="items-center">
+      <h1 className="text-5xl font-sans text-center text-gray-900 dark:text-white my-8">Top NGOs</h1>
+      <Separator className="w-1/3 mx-auto"/>
       <div className="grid grid-cols-3 gap-8 mt-10">
         {ngos.map((ngo, index) => (
             <NgoCard key={index} name={ngo.name} imageUrl={ngo.imageUrl} />

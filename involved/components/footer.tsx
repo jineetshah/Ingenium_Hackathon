@@ -156,7 +156,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 ml-16">
               <div>
                 <p className="font-medium text-[#525252] dark:text-[#525252]">
                   Services
@@ -265,7 +265,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-12 dark:border-gray-800">
+          <div className="border-t border-gray-100 pt-12 dark:border-gray-800">
             <div className="sm:flex sm:items-center sm:justify-between">
               <ul className="flex flex-wrap gap-4 text-xs">
                 <li>

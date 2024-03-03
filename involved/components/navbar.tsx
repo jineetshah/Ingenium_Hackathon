@@ -26,23 +26,28 @@ const Navbar = () => {
     },
     {
       id: 2,
+      link: "/post", // Changed to navigate to the root
+      text: "Feed", // Text to display
+    },
+    {
+      id: 3,
       link: "/ngos",
       text: "NGOs",
     },
     {
-      id: 3,
-      link: "/demo1",
-      text: "demo1",
-    },
-    {
       id: 4,
-      link: "/demo2",
-      text: "demo2",
+      link: "/dashboard/12345",
+      text: "NGO Dashboard",
     },
     {
       id: 5,
-      link: "/contact",
-      text: "contact",
+      link: "/user/7447",
+      text: "User Profile",
+    },
+    {
+      id: 6,
+      link: "/ngos/111",
+      text: "NGO Details",
     },
   ];
 
@@ -53,7 +58,6 @@ const Navbar = () => {
           <a
             className="link-underline link-underline-black"
             href="/"
-            target="_blank"
             rel="noreferrer"
           >
             <Image src={img} alt="Involved" width={200} height={100}></Image>

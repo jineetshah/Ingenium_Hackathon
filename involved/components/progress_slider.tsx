@@ -5,7 +5,7 @@ import { Transition } from "@headlessui/react";
 
 interface Item {
   img: StaticImageData;
-  desc: string;
+  desc: string; 
   buttonIcon: StaticImageData;
 }
 

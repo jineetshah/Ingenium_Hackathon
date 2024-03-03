@@ -18,12 +18,22 @@ import { VolModal } from "@/components/modals/volmodal";
 import { ColabModal } from "@/components/modals/colabmodal";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NgoDashboard = () => {
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
   const handleNewVol = () => {
     console.log("Hiiii");

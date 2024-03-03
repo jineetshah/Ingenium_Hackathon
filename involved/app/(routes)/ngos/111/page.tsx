@@ -20,10 +20,39 @@ import { Heading } from "@/components/ui/heading";
 import { Separator } from "@/components/ui/separator";
 import { IndianRupee } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
+import { ConnectModal } from "@/components/modals/connectmodal";
+
 
 const NgoDetails = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
+  const toastcheck = () => {
+    toast.success("Sucess!! NGO will contact you soon")
+  }
+  const handleNewVol = () => {
+    console.log("Hiiii");
+  };
+
   return (
     <div className="">
+      <ConnectModal
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        onConfirm={handleNewVol}
+        loading={loading}
+      />
       <div
         className="relative h-64 w-full bg-cover bg-center"
         style={{
@@ -56,13 +85,15 @@ const NgoDetails = () => {
                 Donate
               </Link>
               <Link
-                href={"/"}
+                href={""}
+                onClick={toastcheck}
                 className="hover:underline text-muted-foreground"
               >
                 Volunteer
               </Link>
               <Link
-                href={"/"}
+                href={""}
+                onClick={() => {setOpen(true)}}
                 className="hover:underline text-muted-foreground"
               >
                 Connect
@@ -144,6 +175,7 @@ const NgoDetails = () => {
           individual has the opportunity to lead a fulfilled and empowered life.
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

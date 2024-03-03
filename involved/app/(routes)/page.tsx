@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import Card from "@/components/card_home";
 import i1 from "@/public/images/images_1.jpeg";
 import i2 from "@/public/mountain.jpg";
+import home1 from "@/public/images/home_1.png"
+import home2 from "@/public/images/home_2.png"
+import home3 from "@/public/images/home_3.png"
+import home4 from "@/public/images/home_4.png"
+import home5 from "@/public/images/home_5.png"
+import home6 from "@/public/images/home_6.png"
 import { SparklesCore } from "@/components/ui/sparkles";
-import home1 from "@/public/images/home_1.png";
-import home2 from "@/public/images/home_2.png";
-import home3 from "@/public/images/home_3.png";
-import home4 from "@/public/images/home_4.png";
 
 import SilderImg03 from "@/public/mountain.jpg";
 import { StaticImageData } from "next/legacy/image";

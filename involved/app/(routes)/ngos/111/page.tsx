@@ -23,12 +23,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { ConnectModal } from "@/components/modals/connectmodal";
+import { DonateModal } from "@/components/modals/donatemodal";
 
 
 const NgoDetails = () => {
   const [isMounted, setIsMounted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(false);
+  const [open1, setOpen1] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
@@ -52,6 +54,12 @@ const NgoDetails = () => {
         onClose={() => setOpen(false)}
         onConfirm={handleNewVol}
         loading={loading}
+      />
+      <DonateModal 
+      isOpen={open1}
+      onClose={() => setOpen1(false)}
+      onConfirm={handleNewVol}
+      loading={loading}
       />
       <div
         className="relative h-64 w-full bg-cover bg-center"
@@ -79,8 +87,9 @@ const NgoDetails = () => {
             <p className="text-2xl">hamaraapnango@gmail.com</p>
             <div className="space-x-5 mt-6 text-3xl">
               <Link
-                href={"/"}
+                href={""}
                 className="hover:underline text-muted-foreground"
+                onClick={() => setOpen1(true)}
               >
                 Donate
               </Link>

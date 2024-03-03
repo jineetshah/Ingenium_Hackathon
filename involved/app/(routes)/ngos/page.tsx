@@ -1,5 +1,8 @@
+"use client"
+
 import NgoCard from "@/components/ui/card_n";
 import bgImage from "@/public/images/ngo_card_bg.png"
+import { useEffect, useState } from "react";
 
 const NGOPage = () => {
  const ngos = [
@@ -13,6 +16,16 @@ const NGOPage = () => {
     { name: "NGO 8", imageUrl: "/images/ngo_card_bg.png" },
     { name: "NGO 9", imageUrl: "/images/ngo_card_bg.png" },
  ];
+
+ const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
  return (
     <div>

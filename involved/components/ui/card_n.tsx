@@ -39,7 +39,7 @@ const NgoCard: React.FC<NgoCardProps> = ({ name, imageUrl }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
             beatae!
             <button
-              className="m-5 bg-gradient-to-r from-purple-600 to-black text-white font-bold py-3 px-8 min-w-[200px] rounded-lg shadow-md transition duration-300 hover:shadow-lg hover:from-black hover:to-purple-600"
+              className="m-5 bg-gradient-to-r from-gray-600 to-black text-white font-bold py-3 px-8 min-w-[200px] rounded-lg shadow-md transition duration-300 hover:shadow-lg hover:from-black hover:to-gray-600"
               onClick={handleclick}
             >
               Know More

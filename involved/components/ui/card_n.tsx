@@ -25,6 +25,7 @@ const NgoCard: React.FC<NgoCardProps> = ({ name, imageUrl }) => {
   };
 
   return (
+    <div className="">
     <div className="NgoCard rounded-lg overflow-hidden p-4">
       <div
         className="mx-auto max-w-sm shadow-xl bg-cover bg-center min-h-150 transform duration-500 hover:-translate-y-2 cursor-pointer group"
@@ -47,6 +48,7 @@ const NgoCard: React.FC<NgoCardProps> = ({ name, imageUrl }) => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

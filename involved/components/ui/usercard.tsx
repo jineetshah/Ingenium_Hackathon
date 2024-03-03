@@ -26,7 +26,7 @@ const UserCards: React.FC<UserCardsProps> = ({
         <h2 className="text-xl font-bold">{userName}</h2>
         <p className="text-gray-600">Hours worked: {hoursWorked}</p>
       </div>
-      <div className="flex-col  text-left mx-5">
+      <div className="flex-col  text-left mx-5 w-2/3">
         <div className="">Comment </div>
 
         <p className="text-gray-600 text-wrap">

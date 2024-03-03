@@ -32,7 +32,7 @@ const NGOPage = () => {
     <div className="items-center">
       <h1 className="text-5xl font-sans text-center text-gray-900 dark:text-white my-8">Top NGOs</h1>
       <Separator className="w-1/3 mx-auto"/>
-      <div className="grid grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-3 gap-8 my-10 mx-16">
         {ngos.map((ngo, index) => (
             <NgoCard key={index} name={ngo.name} imageUrl={ngo.imageUrl} />
         ))}

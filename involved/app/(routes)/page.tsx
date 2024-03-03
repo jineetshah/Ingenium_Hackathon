@@ -8,6 +8,7 @@ import home1 from "@/public/images/home_1.png"
 import home2 from "@/public/images/home_2.png"
 import home3 from "@/public/images/home_3.png"
 import home4 from "@/public/images/home_4.png"
+
 import SilderImg03 from "@/public/mountain.jpg";
 import { StaticImageData } from "next/legacy/image";
 import ProgressSlider from "@/components/progress_slider";

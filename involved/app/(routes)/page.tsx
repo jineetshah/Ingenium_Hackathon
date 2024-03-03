@@ -4,28 +4,17 @@ import Card from "@/components/card_home";
 import i1 from "@/public/images/images_1.jpeg";
 import i2 from "@/public/mountain.jpg";
 import { SparklesCore } from "@/components/ui/sparkles";
-<<<<<<< HEAD
 import home1 from "@/public/images/home_1.png";
 import home2 from "@/public/images/home_2.png";
 import home3 from "@/public/images/home_3.png";
 import home4 from "@/public/images/home_4.png";
-=======
-import home1 from "@/public/images/home_1.png"
-import home2 from "@/public/images/home_2.png"
-import home3 from "@/public/images/home_3.png"
-import home4 from "@/public/images/home_4.png"
->>>>>>> af65f907a5bbc070df477288739fd2a48e5a477a
 
 import SilderImg03 from "@/public/mountain.jpg";
 import { StaticImageData } from "next/legacy/image";
 import ProgressSlider from "@/components/progress_slider";
-<<<<<<< HEAD
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Image from "next/image";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-=======
-import { HoverEffect } from "@/components/ui/card-hover-effect"; 
->>>>>>> af65f907a5bbc070df477288739fd2a48e5a477a
 interface CardProps {
   image: StaticImageData;
   title: string;
@@ -212,13 +201,13 @@ const HomePage: React.FC = () => {
               />
             </div>
             <h1 className="md:text-7xl text-3xl lg:text-5xl font-bold text-center text-white relative z-20 pb-10">
-            Discover Purpose, Get INVOLVED:
+              Discover Purpose, Get INVOLVED:
             </h1>
             <h1 className="md:text-7xl text-3xl lg:text-5xl font-bold text-center text-white relative z-20 pb-10">
-            Connecting NGOs with Volunteers 
+              Connecting NGOs with Volunteers
             </h1>
             <h1 className="md:text-7xl text-3xl lg:text-4xl font-bold text-center text-white relative z-20">
-            And much more ...
+              And much more ...
             </h1>
           </div>
           <p className="text-center text-black rounded-tr-xl font-bold font-mono text-6xl pb-10">

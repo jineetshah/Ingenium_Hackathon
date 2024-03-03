@@ -26,7 +26,7 @@ const Navbar = () => {
     },
     {
       id: 2,
-      link: "/feed", // Changed to navigate to the root
+      link: "/post", // Changed to navigate to the root
       text: "Feed", // Text to display
     },
     {

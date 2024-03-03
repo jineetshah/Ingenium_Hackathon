@@ -104,36 +104,42 @@ const HomePage: React.FC = () => {
       title: "6000+ Volunteers",
       description:
         "In the past year, around 6530 people have connected with the NGOs and helped in building a better society.",
+        link: "/",
       
     },
     {
       title: "170+ NGOs",
       description:
         "We have become a community of 176 NGOs who have been working day and night providing services to the ones needed the most, Improving the lifestyle of everyone in the society.",
+        link: "/",
     
     },
     {
       title: "2 lakhs + fund raised",
       description:
         "Through contributions whether small or big have helped us in receiving a total fund of 245368 Rupees.",
+        link: "/",
     
     },
     {
       title: "More than 100 corporates",
       description:
         "Corporates have been engaged with the society for the better cause. Extending a helping hand to the NGOs to help them in various aspects.",
+        link: "/",
      
     },
     {
       title: "1400+ Animals and birds helped",
       description:
         "Wildlife conservation has become a concern in the modern world with the growth of industrialisation and urbanisation. Saving them should be topmost priority.",
+        link: "/",
   
     },
     {
       title: "20000+ People received help",
       description:
         "Diversifying the received materials to a vast number in a society is not an easy task. This year 20650 people have been helped in various areas of needs.",
+        link: "/",
  
     },
   ];

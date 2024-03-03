@@ -50,6 +50,7 @@
     "react-stars": "^2.2.5",
     "recharts": "^2.12.2",
     "services": "^0.0.3",
+    "sharp": "^0.33.2",
     "stripe": "^14.19.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",

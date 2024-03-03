@@ -1,11 +1,11 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import Ngo from "../../(models)/(ngo)/ngo";
 
 interface Request {
   json: () => Promise<any>;
 }
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const ngoData = body.formData;

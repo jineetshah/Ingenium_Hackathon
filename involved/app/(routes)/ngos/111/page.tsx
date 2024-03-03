@@ -115,7 +115,7 @@ const NgoDetails = () => {
         <div className="px-28 pt-5">
           Hamara Apna NGO, a beacon of change and compassion, stands at the
           forefront of social transformation with its visionary initiative,
-          "Project EduCare." Committed to eliminating educational disparities in
+          Project EduCare. Committed to eliminating educational disparities in
           underprivileged communities, the organization tirelessly works towards
           ensuring that every child has unfettered access to quality education.
           In collaboration with local schools, Hamara Apna NGO goes beyond
@@ -123,7 +123,7 @@ const NgoDetails = () => {
           training programs, and introducing innovative learning materials.
         </div>
         <div className="px-28 pt-5">
-          The NGO's dedication extends to the heart of the community, where it
+          The NGOs dedication extends to the heart of the community, where it
           actively involves parents through workshops emphasizing the pivotal
           role of education in holistic community development. Hamara Apna NGO
           envisions a future where educational barriers are dismantled,

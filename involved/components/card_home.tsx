@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/legacy/image";
 import { useState } from "react";
+import { StaticImageData } from "next/image";
 
 interface CardProps {
   image: StaticImageData;

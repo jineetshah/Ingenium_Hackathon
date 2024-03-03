@@ -1,6 +1,6 @@
 import { cn } from "@/app/(utils)/cn";
 
-export const BentoGrid = ({
+export const BentoGrid = ({ 
  className,
  children,
 }: {

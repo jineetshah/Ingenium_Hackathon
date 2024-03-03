@@ -2,7 +2,7 @@
 
 const nextConfig = {
   images: {
-    domains: ["picsum.photos", "images.pexels.com", "images.unsplash.com", 'www.shutterstock.com'],
+    domains: ["https://picsum.photos", "https://images.pexels.com", "https://images.unsplash.com", 'https://www.shutterstock.com'],
   },
 };
 

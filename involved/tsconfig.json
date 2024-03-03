@@ -21,6 +21,7 @@
       "@/*": ["./*"]
     }
   },
+  "types":["node"],
   "include": ["new-types.d.ts","next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/organization/route.js", "app/(models)/(ngo)/ngo.js"],
   "exclude": ["node_modules"]
 }

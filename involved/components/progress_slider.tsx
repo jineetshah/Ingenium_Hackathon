@@ -115,7 +115,7 @@ export default function ProgressSlider({ items }: { items: Item[] }) {
                 />
               </span>
               <span className="block text-sm font-medium text-slate-900 mb-2">
-                {item.desc}
+                {/* {item.desc} */}
               </span>
               <span
                 className="block relative w-full bg-slate-200 h-1 rounded-full"

@@ -101,45 +101,45 @@ const HomePage: React.FC = () => {
     {
       title: "6000+ Volunteers",
       description:
-        "A technology company that builds economic infrastructure for the internet.",
-      link: "https://stripe.com",
+        "In the past year, around 6530 people have connected with the NGOs and helped in building a better society.",
+      
     },
     {
       title: "170+ NGOs",
       description:
-        "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-      link: "https://netflix.com",
+        "We have become a community of 176 NGOs who have been working day and night providing services to the ones needed the most, Improving the lifestyle of everyone in the society.",
+    
     },
     {
       title: "2 lakhs + fund raised",
       description:
-        "A multinational technology company that specializes in Internet-related services and products.",
-      link: "https://google.com",
+        "Through contributions whether small or big have helped us in receiving a total fund of 245368 Rupees.",
+    
     },
     {
       title: "More than 100 corporates",
       description:
-        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-      link: "https://meta.com",
+        "Corporates have been engaged with the society for the better cause. Extending a helping hand to the NGOs to help them in various aspects.",
+     
     },
     {
       title: "1400+ Animals and birds helped",
       description:
-        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-      link: "https://amazon.com",
+        "Wildlife conservation has become a concern in the modern world with the growth of industrialisation and urbanisation. Saving them should be topmost priority.",
+  
     },
     {
       title: "20000+ People received help",
       description:
-        "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-      link: "https://microsoft.com",
+        "Diversifying the received materials to a vast number in a society is not an easy task. This year 20650 people have been helped in various areas of needs.",
+ 
     },
   ];
   const content = [
     {
-      title: "Collaborative Editing",
+      title: "NGO of the Year",
       description:
-        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+        "Apna NGO have been proved most successful in helping people of the society as well as towards the green revolution by planting more than 10000 plants.",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
           Collaborative Editing
@@ -147,9 +147,9 @@ const HomePage: React.FC = () => {
       ),
     },
     {
-      title: "Real time changes",
+      title: "Topmost Collaborator",
       description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+        "Every NGO requires spport for caryiong out activities and execute their designed plan. CreativeX has collaborated with more than 24 NGOs during the year to help them in every aspect.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
@@ -163,25 +163,16 @@ const HomePage: React.FC = () => {
       ),
     },
     {
-      title: "Version control",
+      title: "Most Helpful Volunteer",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "The time devoted towards betterment of others always helps in improvement of the self. Yash Chopra has helped 13 NGOs by volunteering for an average of 20 hours a week.",
       content: (
         <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
           Version control
         </div>
       ),
     },
-    {
-      title: "Running out of content",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-          Running out of content
-        </div>
-      ),
-    },
+    
   ];
   return (
     <div>

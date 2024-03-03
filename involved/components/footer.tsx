@@ -295,6 +295,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      //{" "}
     </BackgroundGradientAnimation>
   );
 };

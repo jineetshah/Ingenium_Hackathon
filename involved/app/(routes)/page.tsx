@@ -143,9 +143,13 @@ const HomePage: React.FC = () => {
       description:
         "Apna NGO have been proved most successful in helping people of the society as well as towards the green revolution by planting more than 10000 plants.",
       content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-          Collaborative Editing
-        </div>
+        <Image
+            src="/images/home_7.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="volunteer image"
+          />
       ),
     },
     {
@@ -155,11 +159,11 @@ const HomePage: React.FC = () => {
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
-            src="/linear.webp"
+            src="/images/home_5.png"
             width={300}
             height={300}
             className="h-full w-full object-cover"
-            alt="linear board demo"
+            alt="volunteer image"
           />
         </div>
       ),
@@ -169,9 +173,13 @@ const HomePage: React.FC = () => {
       description:
         "The time devoted towards betterment of others always helps in improvement of the self. Yash Chopra has helped 13 NGOs by volunteering for an average of 20 hours a week.",
       content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-          Version control
-        </div>
+        <Image
+            src="/images/home_6.jpg"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="volunteer image"
+          />
       ),
     },
     
